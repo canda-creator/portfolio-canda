@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Canda";
+    src: url("../fonts/canda-font.ttf");
+}
+
+a, h1, h2, footer{
+    font-family: 'Canda';
+}
+
+a{
+    font-weight:700;
+}
+
+.nav-item{
+font-size: 150%;
+}
+
+a.navbar-brand{
+    font-size: 200%;
+}
+
+.contenido__principal {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+    text-align: center; 
+    flex-direction: column;
+}
+
+.name h1 {
+    margin: 0;
+    position: relative;
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.name h1::after {
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 100%;
+    height: 12px; 
+    background-color: rgba(168, 208, 230, 0.7); 
+    z-index: -1; 
+}
+
+.title h2 {
+    margin: 5px 0 0;
+    font-size: 1.8rem;
+    color: #555; 
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.name,
+.title {
+    margin: 0;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.custom-card-content {
+    padding: 20px;
+}
+
+.custom-card-content h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.custom-card-content p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.custom-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.card-container-custom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-block: 20px;
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+.proyecto{
+    text-align: center;
+}
+
+footer {
+    background-color: #909090;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.footer__parrafo{
+    margin-bottom: 0;
+}
