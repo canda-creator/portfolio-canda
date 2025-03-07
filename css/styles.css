@@ -67,10 +67,17 @@ a.navbar-brand{
     margin: 0;
 }
 
-#navbarNav {
-    display: flex;
-    justify-content: flex-end;
+@media (min-width: 992px) {
+    #navbarNav {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
+
+.navbar-nav {
+    margin-left: auto;
+}
+
 
 .custom-card {
     background-color: white;
@@ -154,4 +161,38 @@ footer {
 
 .footer__parrafo{
     margin-bottom: 0;
+}
+
+
+.tech-icons {
+    margin-bottom: 15px;
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+p.parrafo{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+.navbar-collapse {
+    display: block;
+}
+
+.fa-html5 {
+    color: #e34f26; /* Color para el ícono HTML5 */
+}
+
+.fa-css3-alt {
+    color: #1572b6; /* Color para el ícono CSS3 */
+}
+
+.fa-js {
+    color: #f7df1e; /* Color para el ícono JavaScript */
 }
