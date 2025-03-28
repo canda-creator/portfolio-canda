@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Candela Alfonso</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="./logo/logo-cande.png" type="logo">
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg bg-light navbar__nav sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Candela Alfonso</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -26,7 +31,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Mis Proyectos</a>
-                    </li>              
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contacto</a>
                     </li>
@@ -35,68 +40,127 @@
         </div>
     </nav>
 
-    <div class="contenedor">
-        <div class="contenedor">
-            <div class="contenido__principal">
-                <div class="name">
-                    <h1>Candela Alfonso</h1>
-                </div>
-                <div class="title">
-                    <h2>Front-End Developer</h2>
-                </div>
+    <div class="pagina">
+        <div class="contenido">
+            <div class="texto">
+                <h1 class="titulo">Candela Alfonso</h1>
+                <h2 class="subtitulo">Front-End Developer</h2>
             </div>
-            
-            <div class="nena">
-                <img src="./img/chica-notebook.jpg" alt="">
-            </div>
+            <img class="imagen" src="./img/chica-notebook.jpg" alt="Imagen de ejemplo">
         </div>
-
     </div>
 
-    <section id="projects">
-        <div class="title__projects">
-            <h2 class="proyecto">Mis Proyectos</h2>
-
-        <section class="card-container-custom row justify-content-center g-4 carta">
-            <div class="custom-card col-md-4">
-                <img src="./img/proyecto1.png" alt="Imagen del proyecto"   class="custom-card-img">
-                <div class="custom-card-content">
-                    <h2>Proyecto 1</h2>
-                    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus obcaecati quasi quidem neque illo expedita facilis nulla maiores sapiente omnis nobis libero facere sint molestias esse, fugiat dicta natus suscipit?</p>
-
-                    <div class="tech-icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                
-                    <button class="custom-btn">Ver más</button>
-                </div>
+    <div class="container__text">
+        <div class="image-with-text">
+            <div class="image-container">
+                <img src="./img/cande-sobre-mi.jpeg" alt="Descripción de la imagen">
             </div>
-        
-            <div class="custom-card col-md-4">
-                <img src="./img/proyecto2.png" alt="Imagen del proyecto"  class="custom-card-img">
-                <div class="custom-card-content">
-                    <h2>Proyecto 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde pariatur itaque harum sed? Sapiente porro, repellendus ad officiis pariatur illo itaque adipisci fugiat velit aliquid quibusdam, ab vel quidem sit.</p>
-                    <div class="tech-icons">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </div>
-                
-                    <button class="custom-btn">Ver más</button>
-                </div>
+            <div class="text">
+                <h2>Acerca de mí.</h2>
+                <p>¡Hola! Soy Cande, actualmente estudio marketing en la Universidad de Palermo y también tengo
+                    formación en
+                    Desarrollo Front-End. Me apasiona crear experiencias digitales que sean fáciles de usar y
+                    atractivas. Mi
+                    objetivo es combinar lo aprendido en marketing y tecnología para ayudar a las marcas a conectar de
+                    manera efectiva con su audiencia, siempre pensando en mejorar la experiencia del usuario. Estoy en
+                    constante aprendizaje y me encanta afrontar nuevos desafíos. Actualmente estoy aprendiendo
+                    Back-End para seguir creciendo en el área.</p>
+                <a href="#footer">Contactame!</a>
             </div>
-        </section>
         </div>
-        </section>
+    </div>
+
+
+    <section id="herramientas" class="contenedor-herramientas">
+        <h2 class="titulo-seccion">Herramientas que utilizo</h2>
+        <div class="herramientas-lista">
+            <div class="herramienta-card">
+                <i class="fab fa-html5 herramienta-icon"></i>
+                <p class="herramienta-nombre">HTML</p>
+            </div>
+            <div class="herramienta-card">
+                <i class="fab fa-css3-alt herramienta-icon"></i>
+                <p class="herramienta-nombre">CSS</p>
+            </div>
+            <div class="herramienta-card">
+                <i class="fab fa-js-square herramienta-icon"></i>
+                <p class="herramienta-nombre">JavaScript</p>
+            </div>
+            <div class="herramienta-card">
+                <i class="fab fa-python herramienta-icon"></i>
+                <p class="herramienta-nombre">Python</p>
+            </div>
+            <div class="herramienta-card">
+                <i class="fab fa-figma herramienta-icon"></i>
+                <p class="herramienta-nombre">Figma</p>
+            </div>
+            <div class="herramienta-card">
+                <i class="fab fa-react herramienta-icon"></i>
+                <p class="herramienta-nombre">React</p>
+            </div>
+
+            <div class="herramienta-card">
+                <i class="fab fa-bootstrap herramienta-icon"></i>
+                <p class="herramienta-nombre">Bootstrap</p>
+            </div>
+
+            <div class="herramienta-card">
+                <i class="fab fa-sass herramienta-icon"></i>
+                <p class="herramienta-nombre">Sass</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="contenedor-proyectos">
+        <div class="proyectos-lista">
+            <div class="proyecto-card">
+                <img class="proyecto-imagen" src="./img/proyecto1.png" alt="Proyecto 1">
+                <h3 class="proyecto-titulo">TXT - Fanpage</h3>
+                <p class="proyecto-descripcion">Creé una página web sobre la banda surcoreana Tomorrow X Together. Me
+                    aseguré de hacer un diseño atractivo y responsivo en dispositivos mobile y de escritorio. </p>
+                <a href="#" class="proyecto-boton">Code</a>
+            </div>
+
+            <div class="proyecto-card">
+                <img class="proyecto-imagen" src="./img/proyecto2.png" alt="Proyecto 2">
+                <h3 class="proyecto-titulo">Portfolio</h3>
+                <p class="proyecto-descripcion">Desarrollé un portfolio personal en formato landing page para mostrar
+                    mis
+                    habilidades y proyectos
+                    como Front-End Developer.</p>
+                <a href="#" class="proyecto-boton">Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>Contactame!</h2>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
 
     <footer>
         <p class="footer__parrafo">&copy; 2025 Candela Alfonso. All Rights Reserved.</p>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-cu6n0VYZ+KCXqClRqaP3Tpd87MkmXJjwvLCP5YXIwBAlc6/dLzB6z/tJc3/gYgi"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
