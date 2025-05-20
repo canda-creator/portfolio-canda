@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     overflow-x: hidden;
     height: 100vh;
 }
@@ -22,6 +23,13 @@ a {
     font-weight: 700;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 a.navbar-brand {
     font-size: 200%;
     font-weight: 400;
@@ -35,9 +43,7 @@ a.navbar-brand {
     font-size: 120%;
 }
 
-.navbar-collapse {
-    display: block;
-}
+
 
 .pagina {
     display: flex;
@@ -129,6 +135,8 @@ a.navbar-brand {
     text-align: left;
     padding: 20px;
     border-radius: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .image-container {
@@ -144,6 +152,7 @@ a.navbar-brand {
     display: block;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .image-container img:hover {
@@ -276,13 +285,23 @@ a.navbar-brand {
     }
 }
 
+.titulo-proyectos {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff85a2;
+    text-align: center;
+    padding-top: 20px;
+    padding-top: 90px;
+    margin: 0;
+
+}
+
 .contenedor-proyectos {
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 40px;
+    padding: 20px;
 }
 
 .proyectos-lista {
@@ -440,5 +459,155 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* HOME */
+    .pagina {
+        padding: 40px 20px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .texto {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .imagen {
+        width: 180px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    a.navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 20px 10px;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .footer__parrafo {
+        margin-bottom: 0;
+    }
+
+    /* Imagen + texto section */
+    .image-with-text {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .image-container,
+    .text {
+        margin: 0;
+        padding: 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text h2 {
+        font-size: 1.3rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    /* Proyectos y herramientas */
+    .proyectos-lista,
+    .herramientas-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto-card,
+    .herramienta-card {
+        width: 90%;
+    }
+
+    .titulo-seccion,
+    .titulo-proyectos {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulo {
+        font-size: 2.2rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .titulo::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        /* 🔹 más corto que el texto (ajustá entre 40% y 70% según el efecto deseado) */
+        height: 10px;
+        background-color: rgb(199 125 207 / 70%);
+        z-index: -1;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .titulo {
+        font-size: 2.2rem;
+        position: relative;
+        text-align: center;
+    }
+
+    .titulo::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        /* 🔹 más corto que el texto (ajustá entre 40% y 70% según el efecto deseado) */
+        height: 10px;
+        background-color: rgb(199 125 207 / 70%);
+        z-index: -1;
     }
 }
