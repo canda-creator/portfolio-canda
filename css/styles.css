@@ -1,11 +1,14 @@
+/* 1. Importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* 2. Reset general */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* 3. Estilos globales */
 body,
 html {
     overflow-x: hidden;
@@ -23,6 +26,7 @@ a {
     font-weight: 700;
 }
 
+/* 4. Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -43,8 +47,7 @@ a.navbar-brand {
     font-size: 120%;
 }
 
-
-
+/* 5. Página principal */
 .pagina {
     display: flex;
     justify-content: center;
@@ -128,6 +131,7 @@ a.navbar-brand {
     transform: scale(1.1) translateX(10px);
 }
 
+/* 6. Imagen + Texto */
 .image-with-text {
     display: flex;
     align-items: center;
@@ -202,35 +206,7 @@ a.navbar-brand {
     color: #ff6600;
 }
 
-@media (max-width: 768px) {
-    .image-with-text {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-container {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px;
-        max-width: 90%;
-    }
-
-    .text {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .text h2 {
-        font-size: 20px;
-    }
-
-    .text p {
-        font-size: 16px;
-    }
-}
-
+/* 7. Herramientas */
 .contenedor-herramientas {
     text-align: center;
     padding: 50px 20px;
@@ -277,23 +253,14 @@ a.navbar-brand {
     color: #333;
 }
 
-@media (max-width: 768px) {
-    .herramientas-lista {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
+/* 8. Proyectos */
 .titulo-proyectos {
     font-size: 2.5rem;
     font-weight: 600;
     color: #ff85a2;
     text-align: center;
-    padding-top: 20px;
     padding-top: 90px;
     margin: 0;
-
 }
 
 .contenedor-proyectos {
@@ -355,27 +322,37 @@ a.navbar-brand {
     margin-bottom: 12px;
 }
 
-.proyecto-boton {
+/* 9. Botones reutilizables */
+.proyecto-boton,
+.boton {
     display: inline-block;
-    background: #ff85a2;
-    color: white;
-    text-decoration: none;
     padding: 10px 22px;
     border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(255, 85, 132, 0.3);
-    border: none;
     font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 3px 10px rgba(255, 85, 132, 0.3);
+    text-decoration: none;
 }
 
-.proyecto-boton:hover {
-    background: #fff;
-    color: #ff5d8f;
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(255, 85, 132, 0.4);
+.proyecto-boton {
+    background: #ff85a2;
+    color: white;
 }
 
+.boton {
+    color: #ff85a2;
+    background: #ffffff;
+}
+
+.proyecto-boton:hover,
+.boton:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+/* 10. Formulario de contacto */
 .form-container {
     background: #ffe5ec;
     border-radius: 10px;
@@ -439,8 +416,8 @@ a.navbar-brand {
     font-size: 0.9rem;
 }
 
+/* 11. Footer */
 footer {
-    background-color: #909090;
     background-color: rgb(248, 249, 250);
     color: rgba(0, 0, 0, 0.55);
     text-align: center;
@@ -452,19 +429,18 @@ footer {
     margin-bottom: 0;
 }
 
+/* 12. Animaciones */
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
+/* 13. Media Queries */
 @media (max-width: 768px) {
-
-    /* HOME */
     .pagina {
         padding: 40px 20px;
         height: auto;
@@ -496,7 +472,6 @@ footer {
         width: 180px;
     }
 
-    /* NAVBAR */
     .navbar {
         padding: 12px 20px;
     }
@@ -518,8 +493,6 @@ footer {
         margin-bottom: 8px;
     }
 
-
-    /* FOOTER */
     footer {
         padding: 20px 10px;
         font-size: 0.85rem;
@@ -530,7 +503,6 @@ footer {
         margin-bottom: 0;
     }
 
-    /* Imagen + texto section */
     .image-with-text {
         flex-direction: column;
         padding: 40px 20px;
@@ -552,7 +524,6 @@ footer {
         font-size: 1rem;
     }
 
-    /* Proyectos y herramientas */
     .proyectos-lista,
     .herramientas-lista {
         flex-direction: column;
@@ -578,13 +549,10 @@ footer {
     }
 
     .titulo::after {
-        content: '';
-        position: absolute;
         bottom: 4px;
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
-        /* 🔹 más corto que el texto (ajustá entre 40% y 70% según el efecto deseado) */
         height: 10px;
         background-color: rgb(199 125 207 / 70%);
         z-index: -1;
@@ -599,13 +567,10 @@ footer {
     }
 
     .titulo::after {
-        content: '';
-        position: absolute;
         bottom: 4px;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        /* 🔹 más corto que el texto (ajustá entre 40% y 70% según el efecto deseado) */
         height: 10px;
         background-color: rgb(199 125 207 / 70%);
         z-index: -1;
